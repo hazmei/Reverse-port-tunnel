@@ -1,0 +1,8 @@
+    ExitOnForwardFailure yes
+Host middleman
+    HostName      _HOSTNAME
+    User          USERNAME
+    IdentityFile  /home/USERNAME/.ssh/id_rsa
+    RemoteForward  REMOTE_PORT localhost:LOCAL_PORT
+    ServerAliveInterval 30
+    ServerAliveCountMax 3
